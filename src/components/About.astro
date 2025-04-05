@@ -1,0 +1,171 @@
+<section id="about" class="py-20 relative overflow-hidden">
+  <div class="absolute inset-0 bg-[linear-gradient(to_right,#00FF00_1px,transparent_1px),linear-gradient(to_bottom,#00FF00_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+  
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center text-[#00FF00] glow animate-pulse-slow">Sobre Mí</h2>
+    
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6 about-content">
+        <p class="text-lg text-[#00FF00] leading-relaxed animate-fade-in">
+          Soy un desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras. 
+          Mi experiencia abarca desde el desarrollo frontend hasta la arquitectura de sistemas en la nube.
+        </p>
+        
+        <p class="text-lg text-[#00FF00] leading-relaxed animate-fade-in" style="animation-delay: 0.2s">
+          Con una sólida base en múltiples tecnologías y frameworks, me especializo en construir 
+          aplicaciones web y móviles escalables, integrando soluciones de IA y gestionando 
+          infraestructuras cloud.
+        </p>
+        
+        <div class="flex flex-wrap gap-4 mt-8 animate-fade-in" style="animation-delay: 0.4s">
+          <span class="px-4 py-2 bg-[#00FF00]/10 border border-[#00FF00]/20 rounded-lg text-[#00FF00] language-tag">
+            Español (Nativo)
+          </span>
+          <span class="px-4 py-2 bg-[#00FF00]/10 border border-[#00FF00]/20 rounded-lg text-[#00FF00] language-tag">
+            Inglés (B2)
+          </span>
+          <span class="px-4 py-2 bg-[#00FF00]/10 border border-[#00FF00]/20 rounded-lg text-[#00FF00] language-tag">
+            Francés (Básico)
+          </span>
+        </div>
+      </div>
+      
+      <div class="relative about-card">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#00FF00]/20 to-transparent rounded-lg transform rotate-3"></div>
+        <div class="relative bg-black/50 border border-[#00FF00]/20 rounded-lg p-6 backdrop-blur-sm">
+          <h3 class="text-2xl font-bold mb-4 text-[#00FF00]">Habilidades Blandas</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 skill-item" style="animation-delay: 0.1s">
+              <span class="text-[#00FF00]">▹</span>
+              <span class="text-[#00FF00]">Comunicación efectiva</span>
+            </li>
+            <li class="flex items-center gap-3 skill-item" style="animation-delay: 0.2s">
+              <span class="text-[#00FF00]">▹</span>
+              <span class="text-[#00FF00]">Trabajo en equipo</span>
+            </li>
+            <li class="flex items-center gap-3 skill-item" style="animation-delay: 0.3s">
+              <span class="text-[#00FF00]">▹</span>
+              <span class="text-[#00FF00]">Resolución de problemas</span>
+            </li>
+            <li class="flex items-center gap-3 skill-item" style="animation-delay: 0.4s">
+              <span class="text-[#00FF00]">▹</span>
+              <span class="text-[#00FF00]">Gestión de proyectos</span>
+            </li>
+            <li class="flex items-center gap-3 skill-item" style="animation-delay: 0.5s">
+              <span class="text-[#00FF00]">▹</span>
+              <span class="text-[#00FF00]">Adaptabilidad</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Floating code elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="floating-code code-1">&lt;code&gt;</div>
+    <div class="floating-code code-2">function()</div>
+    <div class="floating-code code-3">&lt;/&gt;</div>
+  </div>
+</section>
+
+<style>
+  section {
+    background: linear-gradient(to bottom, transparent, rgba(0, 255, 0, 0.05));
+  }
+  
+  .about-content {
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .about-card {
+    animation: fade-in-up 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .skill-item {
+    animation: fade-in-left 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  
+  .language-tag {
+    transition: all 0.3s ease;
+  }
+  
+  .language-tag:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.2);
+  }
+  
+  @keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-left {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes pulse-slow {
+    0%, 100% { text-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.3), 0 0 30px rgba(0, 255, 0, 0.2); }
+    50% { text-shadow: 0 0 15px rgba(0, 255, 0, 0.7), 0 0 25px rgba(0, 255, 0, 0.5), 0 0 35px rgba(0, 255, 0, 0.3); }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse-slow 4s ease-in-out infinite;
+  }
+  
+  .glow {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5),
+                 0 0 20px rgba(0, 255, 0, 0.3),
+                 0 0 30px rgba(0, 255, 0, 0.2);
+  }
+  
+  .floating-code {
+    position: absolute;
+    color: rgba(0, 255, 0, 0.3);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .code-1 {
+    top: 15%;
+    left: 10%;
+    animation: float-code 15s ease-in-out infinite;
+  }
+  
+  .code-2 {
+    top: 25%;
+    right: 15%;
+    animation: float-code 18s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  
+  .code-3 {
+    bottom: 20%;
+    left: 20%;
+    animation: float-code 20s ease-in-out infinite;
+    animation-delay: 4s;
+  }
+  
+  @keyframes float-code {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(20px, -20px) rotate(5deg); }
+    50% { transform: translate(0, -40px) rotate(0deg); }
+    75% { transform: translate(-20px, -20px) rotate(-5deg); }
+  }
+</style> 
